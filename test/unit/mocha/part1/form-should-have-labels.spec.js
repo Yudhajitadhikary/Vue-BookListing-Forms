@@ -41,33 +41,21 @@ describe("BookForm.vue", () => {
       $('label[for="finishedReading"]')
         .text()
         .match(/\s*Finished\s*Reading/gi),
-<<<<<<< HEAD:test/unit/mocha/part1/form-should-have-labels.spec.js
-      "The `BookForm` does not have a `<label></label>` with a text of `Finished Reading`."
-=======
       "The BookForm does not have a label with a text of `Finished Reading`."
->>>>>>> 562816349e1c933e69c6629652621accea3dbb8f:test/unit/mocha/part6/form-should-have-labels.spec.js
     );
 
     assert(
       $('label[for="borrowed"]')
         .text()
         .match(/\s*borrowed/gi),
-<<<<<<< HEAD:test/unit/mocha/part1/form-should-have-labels.spec.js
-      "The `BookForm` does not have a `<label></label>` with a text of `borrowed`."
-=======
       "The BookForm does not have a label with a text of `borrowed`."
->>>>>>> 562816349e1c933e69c6629652621accea3dbb8f:test/unit/mocha/part6/form-should-have-labels.spec.js
     );
 
     assert(
       $('label[for="bought"]')
         .text()
         .match(/\s*bought/gi),
-<<<<<<< HEAD:test/unit/mocha/part1/form-should-have-labels.spec.js
-      "The `BookForm` does not have a `<label></label>` with a text of `bought`."
-=======
       "The BookForm does not have a label with a text of `bought`."
->>>>>>> 562816349e1c933e69c6629652621accea3dbb8f:test/unit/mocha/part6/form-should-have-labels.spec.js
     );
   });
 });
