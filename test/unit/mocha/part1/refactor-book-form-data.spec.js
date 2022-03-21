@@ -40,7 +40,11 @@ describe("BookForm.vue", () => {
 
     assert(
       bookTitle.length > 0,
+<<<<<<< HEAD:test/unit/mocha/part1/refactor-book-form-data.spec.js
       "The `bookData`'s `bookTitle` property is not defined with value of `''`."
+=======
+      "The `bookData` `bookTitle` property is not defined with value of `''`"
+>>>>>>> 562816349e1c933e69c6629652621accea3dbb8f:test/unit/mocha/part6/refactor-book-data.spec.js
     );
 
     let bookAuthor = esquery(
@@ -49,7 +53,11 @@ describe("BookForm.vue", () => {
     );
     assert(
       bookAuthor.length > 0,
+<<<<<<< HEAD:test/unit/mocha/part1/refactor-book-form-data.spec.js
       "The `bookData`'s `bookAuthor` property is not defined with value of `''`."
+=======
+      "The `bookData` `bookAuthor` property is not defined with value of `''`"
+>>>>>>> 562816349e1c933e69c6629652621accea3dbb8f:test/unit/mocha/part6/refactor-book-data.spec.js
     );
 
     let finishedReading = esquery(
@@ -59,7 +67,11 @@ describe("BookForm.vue", () => {
 
     assert(
       finishedReading.length > 0,
+<<<<<<< HEAD:test/unit/mocha/part1/refactor-book-form-data.spec.js
       "The `bookData`'s `finishedReading` property is not defined with value of `false`."
+=======
+      "The `bookData` `finishedReading` property is not defined with value of `false`"
+>>>>>>> 562816349e1c933e69c6629652621accea3dbb8f:test/unit/mocha/part6/refactor-book-data.spec.js
     );
 
     let ownership = esquery(data[0], "Property[key.name=ownership]");
@@ -81,7 +93,11 @@ describe("BookForm.vue", () => {
 
     assert(
       ownershipValue.length == 0,
+<<<<<<< HEAD:test/unit/mocha/part1/refactor-book-form-data.spec.js
       "The `bookData`'s `ownership` value does't seem to be an empty array."
+=======
+      "The `bookData` `ownership` value does't seem to be an empty array."
+>>>>>>> 562816349e1c933e69c6629652621accea3dbb8f:test/unit/mocha/part6/refactor-book-data.spec.js
     );
   });
 });

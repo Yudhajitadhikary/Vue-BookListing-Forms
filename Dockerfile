@@ -43,4 +43,7 @@ RUN \
   source ~/.bash_profile && nvm use && npm install && \
   popd && \
   nvm use default
+<<<<<<< HEAD
 
+=======
+>>>>>>> 562816349e1c933e69c6629652621accea3dbb8f

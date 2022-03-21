@@ -14,6 +14,7 @@ describe("BookForm.vue", () => {
       .find("input")
       .first();
 
+<<<<<<< HEAD
     assert(
       !!input1.attr()["v-model"],
       "The first input element from the `BookForm` component does not have a `v-model` directive."
@@ -34,6 +35,19 @@ describe("BookForm.vue", () => {
         .next()
         .attr()
         ["v-model"].match(/\s*bookData.bookAuthor\s*$/),
+=======
+    assert.propertyVal(
+      input1.attr(),
+      "v-model",
+      "bookData.bookTitle",
+      "The `v-model` of the first form `<input>` tag should update its value to `bookData.bookTitle`."
+    );
+
+    assert.propertyVal(
+      input1.next().attr(),
+      "v-model",
+      "bookData.bookAuthor",
+>>>>>>> 562816349e1c933e69c6629652621accea3dbb8f
       "The `v-model` of the second form `<input>` tag should update its value to `bookData.bookAuthor`."
     );
   });
