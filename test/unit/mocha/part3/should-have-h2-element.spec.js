@@ -19,7 +19,10 @@ describe("BookForm.vue", () => {
     );
 
     assert(
-      hr.prevUntil("book-item").length > 0,
+      hr
+        .prev()
+        .html()
+        .match(/\s*<book-item/gi),
       "It appears that the `<hr>` element has not been added after the `<ul>` element with the `<book-item>` component."
     );
 
